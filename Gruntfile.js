@@ -29,7 +29,13 @@ module.exports = function (grunt) {
 				files: ['**/*.jade'],
 				tasks: ['jade']
 			}
+		},
+		open: {
+			delayed: {
+				path: 'http://localhost:8005',
+				app: 'Google Chrome'
+			}
 		}
 	})
-	grunt.registerTask("default", ["jade", "connect", "watch"]);
+	grunt.registerTask("default", ["jade", "connect", "open", "watch"]);
 }
