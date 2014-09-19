@@ -1,4 +1,6 @@
 module.exports = function (grunt) {
+	var stylspritePlugin = require('grunt-stylsprite');
+
 	grunt.initConfig({
 		jade: {
 			release: {
@@ -10,11 +12,22 @@ module.exports = function (grunt) {
 		stylus: {
 			compile: {
 				options: {
+        			use: [ stylspritePlugin("www/css", "www") ],
 					paths: ['stylus/']
 				},
 				files: [
 					{expand: true, cwd: "stylus", src: ['**/*.styl'], dest: 'www/css', ext: ".css", filter: 'isFile'}
 				]
+			}
+		},
+		stylsprite: {
+			multiple: {
+				files: [{
+					expand: true,
+					cwd: 'images',
+					src: ['_*/**'],
+					dest: 'www/img'
+				}]
 			}
 		},
 		connect: {
@@ -51,5 +64,5 @@ module.exports = function (grunt) {
 			}
 		}
 	})
-	grunt.registerTask("default", ["jade", "stylus", "connect", "open", "watch"]);
+	grunt.registerTask("default", ["jade", "stylsprite", "stylus", "connect", "open", "watch"]);
 }
