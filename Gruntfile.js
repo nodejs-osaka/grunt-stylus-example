@@ -51,5 +51,5 @@ module.exports = function (grunt) {
 			}
 		}
 	})
-	grunt.registerTask("default", ["jade", "connect", "open", "watch"]);
+	grunt.registerTask("default", ["jade", "stylus", "connect", "open", "watch"]);
 }
