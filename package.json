@@ -1,0 +1,24 @@
+{
+  "name": "my-html-project-with-grunt-support",
+  "version": "1.0.0",
+  "description": "This will be fun, we use grunt to make developing websites easier.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Heidegger <martin.heidegger@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nodejs-osaka/grunt-stylus-example.git"
+  },
+  "keywords": [
+    "website",
+    "grunt",
+    "stylus"
+  ],
+  "bugs": {
+    "url": "https://github.com/nodejs-osaka/grunt-stylus-example/issues"
+  },
+  "homepage": "https://github.com/nodejs-osaka/grunt-stylus-example"
+}
