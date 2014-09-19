@@ -7,6 +7,16 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+		stylus: {
+			compile: {
+				options: {
+					paths: ['stylus/']
+				},
+				files: [
+					{expand: true, cwd: "stylus", src: ['**/*.styl'], dest: 'www/css', ext: ".css", filter: 'isFile'}
+				]
+			}
+		},
 		connect: {
 			server: {
 				options: {
