@@ -38,6 +38,10 @@ module.exports = function (grunt) {
 			build: {
 				files: ['**/*.jade'],
 				tasks: ['jade']
+			},
+			stylus: {
+				files: ['stylus/**/*.styl'],
+				tasks: ['stylus']
 			}
 		},
 		open: {
