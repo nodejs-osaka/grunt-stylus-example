@@ -14,12 +14,22 @@ module.exports = function (grunt) {
 					hostname: '*',
 					middleware: function (connect) {
 						return [
+							require('connect-livereload')(),
 							connect.static("./www")
 						];
 					}
 				}
 			}
+		},
+		watch: {
+			options: {
+				livereload: true
+			},
+			build: {
+				files: ['**/*.jade'],
+				tasks: ['jade']
+			}
 		}
 	})
-	grunt.registerTask("default", ["jade", "connect"]);
+	grunt.registerTask("default", ["jade", "connect", "watch"]);
 }
