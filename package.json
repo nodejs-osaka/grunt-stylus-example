@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/nodejs-osaka/grunt-stylus-example/issues"
   },
-  "homepage": "https://github.com/nodejs-osaka/grunt-stylus-example"
+  "homepage": "https://github.com/nodejs-osaka/grunt-stylus-example",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
 }
