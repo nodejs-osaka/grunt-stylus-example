@@ -4,7 +4,8 @@
   "description": "This will be fun, we use grunt to make developing websites easier.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "grunt": "node -e \"require('./node_modules/grunt').cli()\""
   },
   "author": "Martin Heidegger <martin.heidegger@gmail.com>",
   "license": "ISC",
