@@ -17,6 +17,16 @@ module.exports = function (grunt) {
 				]
 			}
 		},
+		stylsprite: {
+			multiple: {
+				files: [{
+					expand: true,
+					cwd: 'images',
+					src: ['**/*'],
+					dest: 'www/img'
+				}]
+			}
+		},
 		connect: {
 			server: {
 				options: {
