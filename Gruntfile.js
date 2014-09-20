@@ -1,4 +1,6 @@
 module.exports = function (grunt) {
+	var stylspritePlugin = require('grunt-stylsprite');
+
 	grunt.initConfig({
 		jade: {
 			release: {
@@ -10,6 +12,7 @@ module.exports = function (grunt) {
 		stylus: {
 			compile: {
 				options: {
+        			use: [ stylspritePlugin("www/css", "www") ],
 					paths: ['stylus/']
 				},
 				files: [
