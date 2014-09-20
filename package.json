@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "grunt": "grunt --npm grunt-contrib-jade --npm grunt-contrib-connect --npm grunt-open --npm grunt-contrib-watch --npm grunt-contrib-stylus --npm grunt-stylsprite --npm grunt-stylsprite"
+    "grunt": "grunt --npm grunt-contrib-jade --npm grunt-contrib-connect --npm grunt-open --npm grunt-contrib-watch --npm grunt-contrib-stylus --npm grunt-stylsprite"
   },
   "author": "Martin Heidegger <martin.heidegger@gmail.com>",
   "license": "ISC",
